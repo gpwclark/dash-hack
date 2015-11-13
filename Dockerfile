@@ -27,9 +27,10 @@ WORKDIR /home/user
 RUN wget https://raw.githubusercontent.com/gpwclark/System-files/master/.vimrc
 RUN wget https://raw.githubusercontent.com/gpwclark/System-files/master/.tmux.conf
 RUN wget https://raw.githubusercontent.com/gpwclark/System-files/master/.bashrc
-WORKDIR /home/user/app
 RUN mkdir -p /home/user/.vim
 RUN git clone https://github.com/VundleVim/Vundle.vim.git /home/user/.vim/bundle/Vundle.vim
+WORKDIR /home/user/app
+RUN bash scapy-2.3.1.zip
 
 # Housekeeping
 RUN chown -R user:user /home/user
