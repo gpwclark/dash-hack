@@ -5,6 +5,9 @@ http://stackoverflow.com/questions/18265376/why-i-can-log-in-amazon-website-usin
 mechanize script:
 https://thetanuj.wordpress.com/2015/06/07/one-click-order-on-amazon-india-using-raspberry-pi/
 
+lynx + perl:
+https://docs.google.com/document/d/1raw78eZQhSTia0N2STr4iOW4qZyz5vIBx-1OHWwkeLs/edit?copiedFromTrash
+
 errors from scapy install:
 INFO: Can't import python gnuplot wrapper . Won't be able to plot.
 INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
