@@ -1,0 +1,6 @@
+git clone git://github.com/sikuli/sikuli.git
+
+then follow instructions in build-linux.txt
+
+must install openvc from here:
+https://github.com/jayrambhia/Install-OpenCV/

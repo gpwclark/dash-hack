@@ -16,3 +16,9 @@ WARNING: No route found for IPv6 destination :: (no default route?)
 INFO: Can't import python Crypto lib. Won't be able to decrypt WEP.
 INFO: Can't import python Crypto lib. Disabled certificate manipulation tools
 Welcome to Scapy (2.3.1)
+
+config the vm:
+vagrant init ubuntu/wily32                                                                                                
+config.vm.provision "shell", path: "init.sh"
+
+lynx:
