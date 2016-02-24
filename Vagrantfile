@@ -17,11 +17,7 @@ Vagrant.configure(2) do |config|
   #config.vm.network "public_network"
   #config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
-  config.vm.provider "virtualbox" do |vb|
-    #vb.customize ["modifyvm", :id, "--nic2", "bridged"]
-    #vb.customize ["modifyvm", :id, "--nicpromisc2", "allow-all"]
-  end
-  config.vm.provision "shell", path: "python_2.5install.sh"
+  config.vm.provision "shell", path: "init.sh"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
