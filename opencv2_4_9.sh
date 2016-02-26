@@ -7,7 +7,7 @@ flag=0
 fi
 echo "unzipping OpenCV 2.4.9"
 pwd
-mv /vagrant/OpenCV-2.4.9.zip ./
+cp /vagrant/OpenCV-2.4.9.zip ./
 unzip OpenCV-2.4.9.zip
 echo "unzipped OpenCV 2.4.9"
 cd opencv-2.4.9
