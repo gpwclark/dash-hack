@@ -36,9 +36,9 @@ rm /usr/bin/python
 ln -s /usr/bin/python2.5 /usr/bin/python
 
 # set up environment for development with scapy
-cd /vagrant/scapy-2.3.1/ && python /vagrant/scapy-2.3.1/setup.py install
+# unzip scapy don't commit it!!!!!!!!!!
+
+cd /vagrant/ && unzip scapy-2.3.1.zip && python /vagrant/scapy-2.3.1/setup.py install
 
 # install opencv
-add-apt-repository ppa:gijzelaar/opencv2.4
-apt-get update
-apt-get libcv-dev
+bash opencv2_4_9.sh

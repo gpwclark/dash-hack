@@ -18,6 +18,8 @@ Vagrant.configure(2) do |config|
   #config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
   config.vm.provision "shell", path: "init.sh"
+  config.vm.provision "shell", path: "opencv2_4_9_deps.sh"
+  config.vm.provision "shell", path: "opencv2_4_9.sh"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
