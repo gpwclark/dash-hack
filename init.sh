@@ -26,6 +26,7 @@ apt-get update && apt-get install -y \
   libtesseract3 \
   wmctrl \
   swig \
+  xdotool \
   ca-certificates 
 
 apt-add-repository -y ppa:fkrull/deadsnakes
