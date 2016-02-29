@@ -27,7 +27,8 @@ apt-get update && apt-get install -y \
   wmctrl \
   swig \
   xdotool \
-  ca-certificates 
+  ca-certificates \
+  sikuli-ide
 
 apt-add-repository -y ppa:fkrull/deadsnakes
 apt-get update -y
