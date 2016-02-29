@@ -5,6 +5,7 @@
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
+
 Vagrant.configure(2) do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
@@ -16,10 +17,13 @@ Vagrant.configure(2) do |config|
   #config.vm.network :bridge
   #config.vm.network "public_network"
   #config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+  config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
-  config.vm.provision "shell", path: "init.sh"
-  config.vm.provision "shell", path: "opencv2_4_9_deps.sh"
-  config.vm.provision "shell", path: "opencv2_4_9.sh"
+  #config.vm.provision "shell", path: "opencv2_4_9_deps.sh"
+  #config.vm.provision "shell", path: "opencv2_4_9.sh"
+  config.vm.provision "shell", path: "lubuntu-desktop.sh"
+  config.vm.provision "shell", path: "sikuli_deps.sh"
+  #config.vm.provision "shell", path: "init.sh"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs

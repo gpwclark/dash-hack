@@ -14,7 +14,7 @@ echo "Installing Dependenices"
 sudo add-apt-repository -y ppa:mc3man/trusty-media
 sudo apt-get -y update
 sudo apt-get -y dist-upgrade
-sudo apt-get -y install libopencv-dev unzip
+sudo apt-get -y install libopencv-dev unzip lubuntu-desktop
 sudo apt-get -y install build-essential checkinstall cmake pkg-config yasm
 sudo apt-get -y install libtiff4-dev libjpeg-dev libjasper-dev
 sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev
