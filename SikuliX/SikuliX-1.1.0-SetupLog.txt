@@ -1,0 +1,95 @@
+[debug (2/29/16 3:02:49 AM)] Debug: setLogFile: /home/vagrant/SikuliX6/SikuliX-1.1.0-SetupLog.txt
+[debug (2/29/16 3:02:49 AM)] RunSetup: ... starting with no args given
+[debug (2/29/16 3:02:49 AM)] RunSetup: Setup: 1.1.0 2015-10-06_17:22 in folder:
+/home/vagrant/SikuliX6
+[debug (2/29/16 3:02:50 AM)] RunSetup: RunningSystem: Linux 3.13.0-79-generic (0 Ubuntu 14.04)
+[debug (2/29/16 3:02:50 AM)] RunSetup: parent of jar/classes: /home/vagrant/SikuliX6
+[debug (2/29/16 3:02:50 AM)] RunSetup: RunningJava: Java 7 (amd64) 1.7.0_80-b15
+[debug (2/29/16 3:02:50 AM)] init user preferences
+[debug (2/29/16 3:02:54 AM)] RunSetup: 
+popAsk: --------------------
+The following file(s) will be downloaded to
+/home/vagrant/SikuliX6
+--- Native support libraries for Linux (sikulixlibs...)
+--- Package 1 ---
+sikulixsetupIDE-1.1.0-forsetup.jar (IDE/Scripting)
+sikulixsetupAPI-1.1.0-forsetup.jar (Java API)
+ - with Jython
+Only click NO, if you want to terminate setup now!
+Click YES even if you want to use local copies in Downloads!
+--------------------
+[debug (2/29/16 3:02:56 AM)] RunSetup: 
+popAsk: --------------------
+You have for Linux native libs
+/home/vagrant/.Sikulix/SikulixDownloads_201510061722/sikulixlibslux-1.1.0.jar
+Click YES, if you want to use this for setup processing
+... or click NO, to ignore it and download a fresh copy
+--------------------
+[debug (2/29/16 3:02:58 AM)] RunSetup: Copied from Downloads: sikulixlibslux
+[debug (2/29/16 3:02:58 AM)] RunTimeSETUP: addToClasspath:
+file:/home/vagrant/SikuliX6/sikulixlibslux.jar
+*** classpath dump sikulix
+  0: /home/vagrant/SikuliX6/sikulixsetup-1.1.0.jar
+  1: /home/vagrant/SikuliX6/sikulixlibslux.jar
+*** classpath dump end
+[debug (2/29/16 3:02:58 AM)] RunSetup: checking usability of bundled/provided libs
+[debug (2/29/16 3:02:58 AM)] RunTimeSETUP: exists libs folder at: /home/vagrant/.Sikulix/SikulixLibs_201510061722
+[debug (2/29/16 3:02:59 AM)] RunTimeSETUP: loadLib: libVisionProxy.so
+[debug (2/29/16 3:03:34 AM)] FileManager: Downloading sikulixsetupAPI-1.1.0-forsetup.jar having 2083 KB
+[debug (2/29/16 3:03:47 AM)] FileManager: downloaded 2083 KB to:
+/home/vagrant/.Sikulix/SikulixDownloads_201510061722/sikulixsetupAPI-1.1.0-forsetup.jar
+[debug (2/29/16 3:03:47 AM)] FileManager: download time: 10
+[debug (2/29/16 3:03:50 AM)] RunSetup: Copied from Downloads: sikulixapi
+[debug (2/29/16 3:03:53 AM)] FileManager: Downloading sikulixsetupIDE-1.1.0-forsetup.jar having 3858 KB
+[debug (2/29/16 3:04:12 AM)] FileManager: downloaded 3858 KB to:
+/home/vagrant/.Sikulix/SikulixDownloads_201510061722/sikulixsetupIDE-1.1.0-forsetup.jar
+[debug (2/29/16 3:04:12 AM)] FileManager: download time: 17
+[debug (2/29/16 3:04:16 AM)] RunSetup: Copied from Downloads: sikulix
+[debug (2/29/16 3:04:16 AM)] RunSetup: 
+popAsk: --------------------
+If you click YES, you will get Jython version 2.7.0 (recommended)
+... but there is an issue with some rare UTF-8/Unicode situations,
+that usually appear on startup with UTF-8 ccharacters
+somewhere in the system environment
+If you encounter such problems with Jython 2.7.0
+run setup again and
+click NO to get Jython 2.5.4rc1
+--------------------
+[debug (2/29/16 3:04:29 AM)] FileManager: Downloading jython-standalone-2.7.0.jar having 36154 KB
+[debug (2/29/16 3:04:44 AM)] FileManager: downloaded 36154 KB to:
+/home/vagrant/.Sikulix/SikulixDownloads/jython-standalone-2.7.0.jar
+[debug (2/29/16 3:04:44 AM)] FileManager: download time: 14
+[debug (2/29/16 3:04:52 AM)] RunSetup: Copied from Downloads: Jython
+[debug (2/29/16 3:04:52 AM)] RunSetup: Download ended
+[debug (2/29/16 3:04:52 AM)] RunSetup: Downloads for selected options:
+sikulixlibslux-1.1.0.jar sikulixsetupIDE-1.1.0-forsetup.jar sikulixsetupAPI-1.1.0-forsetup.jar jython-standalone-2.7.0.jar 
+[debug (2/29/16 3:04:52 AM)] RunSetup: adding needed stuff to sikulix.jar
+[debug (2/29/16 3:04:52 AM)] FileManager: buildJar: sikulixtemp.jar
+[debug (2/29/16 3:04:52 AM)] FileManager: buildJar: adding: sikulix.jar
+[debug (2/29/16 3:07:06 AM)] FileManager: buildJar: adding: sikulixapi.jar
+[debug (2/29/16 3:07:08 AM)] FileManager: buildJar: adding: sikulixjython.jar
+[debug (2/29/16 3:07:38 AM)] FileManager: buildJar: adding: sikulixlibslux.jar
+[debug (2/29/16 3:07:43 AM)] FileManager: buildJar: completed
+[debug (2/29/16 3:07:43 AM)] RunSetup: renaming sikulixtemp.jar to target jar: sikulix.jar
+[debug (2/29/16 3:07:43 AM)] RunSetup: processing commandfiles
+[debug (2/29/16 3:07:43 AM)] RunTimeSETUP: addToClasspath:
+file:/home/vagrant/SikuliX6/sikulix.jar
+[debug (2/29/16 3:07:43 AM)] RunTimeSETUP: exists libs folder at: /home/vagrant/.Sikulix/SikulixLibs_201510061722
+[debug (2/29/16 3:07:43 AM)] RunSetup: Jython: Trying to run functional test: running script statements via SikuliScript
+[debug (2/29/16 3:07:48 AM)] ScriptingSupport: initScriptingSupport: enter
+[debug (2/29/16 3:08:04 AM)] JythonSupport: init: starting
+[debug (2/29/16 3:08:04 AM)] JythonSupport: init: success
+[debug (2/29/16 3:08:04 AM)] JythonSupport: ***** Jython sys.path
+ 0: /home/vagrant/SikuliX6/Lib
+ 1: /home/vagrant/SikuliX6/sikulix.jar/Lib
+ 2: __classpath__
+ 3: __pyclasspath__/
+[debug (2/29/16 3:08:04 AM)] JythonSupport: ***** Jython sys.path end
+[debug (2/29/16 3:08:05 AM)] Jython: sikuli: Sikuli: starting init
+[debug (2/29/16 3:08:13 AM)] Mouse: init
+[debug (2/29/16 3:08:13 AM)] KeyBoard: init
+[error (2/29/16 3:08:13 AM)] RunTimeSETUP:  *** terminating: command 'xdotool' is not executable
+please check the Availability!
+[debug (2/29/16 3:08:13 AM)] RunTimeSETUP: final cleanup
+[debug (2/29/16 3:08:14 AM)] FileManager: deleteFileOrFolder:
+/tmp/Sikulix_2029797886
